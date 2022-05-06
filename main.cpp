@@ -58,7 +58,7 @@ void loop()
 {
   int button_pressed = digitalRead(7); // reading key status
   
-  if (button_apertado == HIGH){ // identifying whether the signal will be
+  if (button_pressed == HIGH){ // identifying whether the signal will be
     state = 1; // longer or normal
   }else if (button_pressed == LOW && status != 1){
     state = 0;
